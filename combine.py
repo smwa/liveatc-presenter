@@ -68,11 +68,12 @@ streams = []
 with open('./streams.txt', 'r') as f:
   streams = [line.strip() for line in f]
 
+p = subprocess.Popen(['date', '-u', '-d', 'yesterday', "+%b-%d-%Y"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+formatted_date = p.stdout.read().decode('ascii').strip()
+p.wait()
+
 for stream in streams:
 
-  p = subprocess.Popen(['date', '-u', '-d', 'yesterday', "+%b-%d-%Y"], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
-  formatted_date = p.stdout.read().decode('ascii').strip()
-  p.wait()
   URL_PREFIX = "https://archive.liveatc.net/{}-{}".format(stream, formatted_date)
 
   subprocess.Popen(['rm', '-r', './tmp'], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL).wait()
