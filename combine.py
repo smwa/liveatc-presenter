@@ -102,7 +102,7 @@ for stream in streams:
     file_index += 1
     
   print("Exporting..")
-  filename = "./recordings/{}-{}".format(stream.replace('/', '-'), formatted_date)
+  filename = "./recordings/{}-{}.mp3".format(stream.replace('/', '-'), formatted_date)
   total.export(filename, format="mp3")
   print("Done.")
 
