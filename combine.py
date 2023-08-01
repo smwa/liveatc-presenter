@@ -107,5 +107,5 @@ for stream in streams:
   print("Done.")
 
   with open("index.html", "a") as f:
-    html = "<h4><a href='{}' download='download'>{} - {}</h4>\n".format(filename, stream, formatted_date)
+    html = "<h4><a href='{}'>{} - {}</h4>\n".format(filename, stream, formatted_date)
     f.write(html)
