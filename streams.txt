@@ -1,4 +1,4 @@
 kokc/KOKC-Twr
 kokc/KOKC-Gnd
-kosu/KOSU2-Gnd-Twr
-kosu/KOSU2-ATIS
+ktyr/KTYR2-Twr
+ktyr/KTYR2-Gnd
