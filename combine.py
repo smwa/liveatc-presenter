@@ -9,7 +9,7 @@ import requests
 TIME_GAP = 4000
 KEEP_SILENCE = 800
 SILENCE_THRESHOLD = -44 # higher is quieter
-SEEK_STEP = 50 # Lower is more precise
+SEEK_STEP = 10 # Lower is more precise
 
 TIMES = [
   "0000",
