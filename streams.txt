@@ -1,4 +1,1 @@
-kokc/KOKC-Twr
-kokc/KOKC-Gnd
 ktyr/KTYR2-Twr
-ktyr/KTYR2-Gnd
